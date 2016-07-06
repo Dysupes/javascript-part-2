@@ -1,17 +1,52 @@
-function longestString(str1,str2){
-    if(str1.length < str2.length){
-        return -1
+// First question
+
+var strings = [
+    {str: "Dylan would love to go back to the Great Wall"},
+    {str: "Emma would like to visit someday!"}
+];
+
+var longString = strings.sort(function (obj1,obj2){
+    if (obj1.str.length > obj2.str.length){
+        return -1;
+    } if (obj1.str.length < obj2.str.length) {
+        return 1;
     } else {
-        return 1
+        return 0;
     }
-};
+});
 
-var sort = longestString;
+// console.log(longString[0].str);
 
-if (sort = -1){
-    console.log("String 2 is longer!")
-} else {
-    console.log("String 1 is longer!")
-}
+// Second question
 
-longestString("Dylan would love to go back to the Great Wall!","Emma still hasn't visited it yet!");
+
+
+var personDetails = [
+        {name: "Dylan", email:"dysupes79@gmail.com"},
+        {name: "Jen", email: "jen@hotmail.com"}
+];
+
+var sortNames = personDetails.sort(function (objt1, objt2){
+    if (objt1.name.length > objt2.name.length){
+        return -1;
+    } if (objt1.name.length < objt2.name.length){
+        return 1;
+    } else {
+        return 0;
+    }
+});
+
+console.log(sortNames);
+
+var sortEmails = personDetails.sort(function (objt1,objt2){
+    if (objt1.email > objt2.email){
+        return 1;
+    } if (objt1.email < objt2.email){
+        return -1;
+    }  else {
+        return 0;
+    }
+});
+
+console.log(sortEmails);
+
