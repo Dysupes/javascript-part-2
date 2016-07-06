@@ -72,6 +72,32 @@ var myNewMixedArray = mixedArray.map(function (objt1){
     return objt1.num * objt1.num;
 });
 
-console.log(myNewMixedArray);
+// console.log(myNewMixedArray);
 
+// Fifth question
 
+function operationMaker(operation){
+    
+    
+    return function(num1, num2) {
+         
+    switch(operation){
+        case "add":
+            return num1 + num2;
+            break;
+        case "subtract":
+            return num1 - num2;
+            break;
+        case "mult":
+            return num1 + num2;
+            break;
+        case "div":
+            return num1 - num2;
+            break;
+        default:
+            console.log("Invalid choice.");
+    }
+    }
+   
+};
+console.log(operationMaker('add')(1,2));
