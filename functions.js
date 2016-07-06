@@ -36,7 +36,7 @@ var sortNames = personDetails.sort(function (objt1, objt2){
     }
 });
 
-console.log(sortNames);
+// console.log(sortNames);
 
 var sortEmails = personDetails.sort(function (objt1,objt2){
     if (objt1.email > objt2.email){
@@ -48,5 +48,30 @@ var sortEmails = personDetails.sort(function (objt1,objt2){
     }
 });
 
-console.log(sortEmails);
+// console.log(sortEmails);
+
+// Third question
+
+var myArray = [12, 32, 5, 7, 9];
+
+var myNewArray = myArray.map(function (num1){
+    return num1 * num1;
+});
+
+//console.log(myNewArray);
+
+// Fourth question
+
+var mixedArray = [
+    {name: "Simon", num: 23},
+    {name: "Shreya", num: 25},
+    {name: "Dylan", num: 37}
+];
+
+var myNewMixedArray = mixedArray.map(function (objt1){
+    return objt1.num * objt1.num;
+});
+
+console.log(myNewMixedArray);
+
 
