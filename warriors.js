@@ -3,7 +3,7 @@ function MakeWarrior (name,gender) {
         this.gender = gender;
         this.level = 1;
         this.weapon = 'wooden sword';
-        this.power = (Math.random(0,100));
+        this.power = (Math.floor(Math.random() * 100));
         this.fight = function(){
             console.log(this.name + "rushes to the arena with" + this.weapon);
         };
