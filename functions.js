@@ -89,10 +89,10 @@ function operationMaker(operation){
             return num1 - num2;
             break;
         case "mult":
-            return num1 + num2;
+            return num1 * num2;
             break;
         case "div":
-            return num1 - num2;
+            return num1 / num2;
             break;
         default:
             console.log("Invalid choice.");
